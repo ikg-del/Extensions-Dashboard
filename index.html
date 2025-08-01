@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Extensions Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <h1>Extensions List</h1>
-      <div class="filter-buttons">x
-        <button class="active">All</button>
-        <button>Active</button>
-        <button>Inactive</button>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="inactive">Inactive</button>
       </div>
     </div>
+
     <div class="grid">
-      <div class="card">
+      <div class="card" data-active="true">
         <h3>DevLens</h3>
         <p>Quickly inspect page layouts and visualize element boundaries.</p>
         <button class="remove-btn">Remove</button>
@@ -25,7 +26,7 @@
           <input type="checkbox" checked />
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-active="true">
         <h3>StyleSpy</h3>
         <p>Instantly analyze and copy CSS from any webpage element.</p>
         <button class="remove-btn">Remove</button>
@@ -33,7 +34,7 @@
           <input type="checkbox" checked />
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-active="false">
         <h3>SpeedBoost</h3>
         <p>Optimizes browser resource usage to accelerate page loading.</p>
         <button class="remove-btn">Remove</button>
@@ -41,8 +42,81 @@
           <input type="checkbox" />
         </div>
       </div>
-      <!-- Add more cards below using the same pattern -->
+      <div class="card" data-active="true">
+        <h3>JSONWizard</h3>
+        <p>Formats,validates, and prettifies JSON responses in-browser.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <div class="card" data-active="true">
+        <h3>TabMaster Pro</h3>
+        <p>Organizes browser tabs into group and sessions.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <div class="card" data-active="false">
+        <h3>ViewportBuddy</h3>
+        <p>Simulates various screen resolutions directly within the browser.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" />
+        </div>
+      </div>
+      <div class="card" data-active="true">
+        <h3>Markup Notes</h3>
+        <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <div class="card" data-active="false">
+        <h3>GridGuides</h3>
+        <p>Overlay customizable grids and alignment guides on any webpage.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" />
+        </div>
+      </div>
+      <div class="card" data-active="true">
+        <h3>Palette Picker</h3>
+        <p>Instantly extracts color palettes from any webpage.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <div class="card" data-active="true">
+        <h3>LinkChecker</h3>
+        <p>Scans and highlights broken links on any page.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <div class="card" data-active="false">
+        <h3>DOM Snapshot </h3>
+        <p>Capture and export DOM structures quickly.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" />
+        </div>
+      </div>
+      <div class="card" data-active="true">
+        <h3>ConsolePlus </h3>
+        <p>Enhanced developer console with advanced filtering and logging.</p>
+        <button class="remove-btn">Remove</button>
+        <div class="toggle">
+          <input type="checkbox" checked />
+        </div>
+      </div>
     </div>
-  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
