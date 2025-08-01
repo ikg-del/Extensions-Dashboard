@@ -4,20 +4,25 @@ body {
   background-color: #0d1117;
   color: #f0f6fc;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  display: flexbox;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
 }
+
 .header h1 {
   font-size: 2rem;
 }
+
 .filter-buttons button {
   background-color: #21262d;
   border: none;
@@ -27,14 +32,17 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .filter-buttons button.active {
   background-color: #2ea043;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
+
 .card {
   background-color: #161b22;
   border-radius: 10px;
@@ -42,14 +50,17 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   position: relative;
 }
+
 .card h3 {
   margin-top: 0;
   font-size: 1.2rem;
 }
+
 .card p {
   font-size: 0.9rem;
   color: #8b949e;
 }
+
 .remove-btn {
   background-color: #da3633;
   color: #fff;
@@ -59,11 +70,13 @@ body {
   cursor: pointer;
   margin-top: 1rem;
 }
+
 .toggle {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
 }
+
 .toggle input[type="checkbox"] {
   width: 40px;
   height: 20px;
@@ -74,9 +87,11 @@ body {
   outline: none;
   cursor: pointer;
 }
+
 .toggle input[type="checkbox"]:checked {
   background-color: #2ea043;
 }
+
 .toggle input[type="checkbox"]::before {
   content: '';
   position: absolute;
@@ -88,6 +103,8 @@ body {
   background-color: #fff;
   transition: 0.3s;
 }
+
 .toggle input[type="checkbox"]:checked::before {
   transform: translateX(20px);
 }
+
